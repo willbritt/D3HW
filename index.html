@@ -1,11 +1,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <<title> D3 Page Template </title>
-    <script type="tex/javascript" src="d3.js"></script>
+    <title> D3 Page Template </title>
+    <script type="text/javascript" src="d3.js"></script>
   </head>
   <body>
-    <script type="tex/javascript">
+    <script type="text/javascript">
 	  var dataset = [ "Lion", "Zebra", "Giraffe", "Hippo"];
 	  d3.select("body").append("p").text("Data Driven Document HW");
 	  d3.select("body").selectAll("p").data(dataset).enter().append("p").text(function(d) {return d; });
