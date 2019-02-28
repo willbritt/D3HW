@@ -1,7 +1,14 @@
 <html>
-  <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8">
+    <<title> D3 Page Template </title>
+    <script type="tex/javascript" src="d3.js"></script>
+  </head>
   <body>
-    <h1> Data Driven Homework </h1>
-    <script src="js/index.js"> </script>
+    <script type="tex/javascript">
+	  var dataset = [ "Lion", "Zebra", "Giraffe", "Hippo"];
+	  d3.select("body").append("p").text("Data Driven Document HW");
+	  d3.select("body").selectAll("p").data(dataset).enter().append("p").text(function(d) {return d; });
+    </script>
   </body>
 </html>
