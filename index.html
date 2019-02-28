@@ -1,4 +1,11 @@
 <html>
+<style type=text/css>
+body {
+	color: white;
+	background-color: MediumAquaMarine;
+	}
+</style>
+	
   <head>
     <meta charset="utf-8">
     <title> D3 Page Template </title>
@@ -6,7 +13,7 @@
   </head>
   <body>
     <script type="text/javascript">
-	  var dataset = [ "Lion", "Zebra", "Giraffe", "Hippo"];
+	  var dataset = [ "Lion", "Zebra", "Giraffe", "Hippo", "Lemur", "Penguin"];
 	  d3.select("body").append("h1").text("Data Driven Document HW");
 	  d3.select("body").append("ul").selectAll("li").data(dataset).enter().append("li").text(function(d) {return d; });
     </script>
